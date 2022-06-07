@@ -1,9 +1,9 @@
-import Logo from "../logo.png"
+import logo from "../logo.png"
 
 const Footer = () => {
     return(
         <div className="Footer">
-        <Logo />
+        <img className="logo" src={logo} alt="..."/>
         </div>
     )
 }

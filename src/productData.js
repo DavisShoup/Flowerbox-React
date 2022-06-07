@@ -1,5 +1,4 @@
-
-const data = [
+export default [
 	{
 		name: 'forgive-me-pleases',
 		image: 'https://i.imgur.com/0UCzcZM.jpg',
@@ -55,5 +54,3 @@ const data = [
 		tags: ['mixed', 'bouquet (with basket)', 'love', 'decor'],
 	},
 ]
-
-export default Data

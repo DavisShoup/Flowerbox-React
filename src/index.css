@@ -5,9 +5,84 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 350px;
+  margin-right: 350px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.productImage {
+  max-width: 200px;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1/2fr 1/2fr 1/2fr;
+  grid-template-rows: 1/2fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "nav nav nav"
+  "banner banner banner"
+  "product product product"
+  "product product product"
+  "product product product"
+  "footer footer footer";
+  row-gap: 1em;
+  column-gap: 1em;
+}
+
+.Products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Header {
+  grid-area: banner;
+}
+
+.Nav {
+  grid-area: nav;
+  background-color: #91B2B9;
+  color: white;
+  width: 1320px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.Footer {
+  grid-area: footer;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.navTag {
+  text-decoration: none;
+  color: inherit;
+}
+
+.productName {
+  color: #91B2B9;
+}
+
+.productPrice {
+  background-color: #EFA9BB;
+  color: white;
+}
+
+.productTag {
+  background-color: #EEEEEE;
+  color: #989898;
+}
+
+

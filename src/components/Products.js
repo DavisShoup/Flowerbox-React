@@ -1,12 +1,14 @@
-import Data from "../Data.js"
 
-const Products = (data) => {
+const Products = ({image, name, price, tags}) => {
+    
+    
+    
     return(
         <div className="Products">
-        <img>{data.image}</img>
-        <p>{data.name}</p>
-        <p>{data.price}</p>
-        <p>{data.tags}</p>
+        <img className ="productImage" src={image}/>
+        <p className="productName">{name}</p>
+        <p className="productPrice">${price}</p>
+        <p className="productTag">{tags}</p>
         </div>
     )
 }
